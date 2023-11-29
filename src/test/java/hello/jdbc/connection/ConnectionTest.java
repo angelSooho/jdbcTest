@@ -1,6 +1,7 @@
 package hello.jdbc.connection;
 
 import com.zaxxer.hikari.HikariDataSource;
+import hello.jdbc.util.SupportTestWithSpring;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,8 +16,7 @@ import java.sql.SQLException;
 import static hello.jdbc.connection.ConnectionsConst.*;
 
 @Slf4j
-@SpringBootTest
-public class ConnectionTest {
+public class ConnectionTest extends SupportTestWithSpring {
 
     @DisplayName("DriverManager를 이용한 DB 연결")
     @Test

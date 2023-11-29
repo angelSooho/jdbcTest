@@ -2,12 +2,11 @@ package hello.jdbc.repository;
 
 import com.zaxxer.hikari.HikariDataSource;
 import hello.jdbc.domain.Member;
+import hello.jdbc.util.SupportTestWithSpring;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import java.util.NoSuchElementException;
 
@@ -16,8 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @Slf4j
-@SpringBootTest
-class MemberRepositoryV1Test {
+class MemberRepositoryV1Test extends SupportTestWithSpring {
 
     private MemberRepositoryV1 repository;
 

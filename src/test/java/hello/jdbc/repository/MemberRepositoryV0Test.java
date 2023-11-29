@@ -1,20 +1,18 @@
 package hello.jdbc.repository;
 
 import hello.jdbc.domain.Member;
+import hello.jdbc.util.SupportTestWithSpring;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.NoSuchElementException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
-@SpringBootTest
-class MemberRepositoryV0Test {
+class MemberRepositoryV0Test extends SupportTestWithSpring {
 
     private final MemberRepositoryV0 repository = new MemberRepositoryV0();
 
