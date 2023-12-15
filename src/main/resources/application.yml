@@ -1,25 +1,25 @@
-spring:
-  profiles:
-    active: local
-  datasource:
-    url: jdbc:h2:mem:jdbc-dev
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
-  h2:
-    console:
-      enabled: true
-#  jpa:
-#    hibernate:
-#      ddl-auto: create
-#    properties:
-#      show_sql: false
-#      hibernate:
-#        format_sql: true
-  sql:
-    init:
-      mode: always
-
-logging.level:
-  root: debug
-  org.hibernate.SQL: debug
+#spring:
+#  profiles:
+#    active: local
+#  datasource:
+#    url: jdbc:h2:mem:jdbc-dev
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#  h2:
+#    console:
+#      enabled: true
+##  jpa:
+##    hibernate:
+##      ddl-auto: create
+##    properties:
+##      show_sql: false
+##      hibernate:
+##        format_sql: true
+#  sql:
+#    init:
+#      mode: always
+#
+#logging.level:
+#  root: debug
+#  org.hibernate.SQL: debug
